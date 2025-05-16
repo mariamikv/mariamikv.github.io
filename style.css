@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.about {
+  width: 400px;
+  height: 250px;
+  background-color: #3346b0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.about-content > span {
+  font-size: 1.1rem;
+}
+
+.about-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: top;
+}
+
+.about-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #fff;
+  opacity: 0.8;
+  padding-bottom: 20px;
+}
+
+/* Shape Icons */
+.shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  opacity: 0.5;
+  animation: wave 3s ease-in-out infinite alternate;
+}
+
+.logo:nth-child(1) {
+  top: 30%;
+  left: 70%;
+  width: 200px;
+  height: 200px;
+  animation-duration: 2.5s;
+  animation-delay: 0s;
+}
+.logo:nth-child(2) {
+  top: 45%;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  width: 200px;
+  height: 200px;
+}
+.logo:nth-child(3) {
+  top: 20%;
+  left: 30%;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+}
+.logo:nth-child(4) {
+  top: 00%;
+  left: 0%;
+  animation-duration: 2.8s;
+  animation-delay: 0.1s;
+    width: 150px;
+  height: 150px;
+}
+.logo:nth-child(5) {
+  top: 20%;
+  left: 50%;
+  animation-duration: 3.2s;
+  animation-delay: 0.2s;
+}
+.logo:nth-child(6) {
+  top: 10%;
+  left: 80%;
+  animation-duration: 2.7s;
+  animation-delay: 0.6s;
+}
+.logo:nth-child(7) {
+  top: 80%;
+  left: 30%;
+  animation-duration: 2.7s;
+  animation-delay: 0.6s;
+}
+
+.logo:nth-child(8) {
+  top: 70%;
+  left: 10%;
+  animation-duration: 2.7s;
+  animation-delay: 0.6s;
+}
+
+.send {
+  width: 20px;
+  height: 20px;
+}
+
+.github {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-row {
+  display: flex;
+  gap: 10px;
+}
+
+.work,
+.projects {
+  width: 180px;
+  height: 100px;
+}
+
+.work {
+  background-color: #f1ecf6;
+  color: black;
+}
+
+.projects {
+  background-color: #2b2a2a;
+  color: white;
+}
+
+.contact {
+  background-color: #e9d48d;
+  color: black;
+  height: 100px;
+  width: 400px;
+  position: relative;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: left;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Me */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.95rem;
+  color: black;
+  opacity: 0.9;
+}
+
+/* Work */
+.work-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.work-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.work-text {
+  color: black;
+}
+
+.work-icon {
+  color: black;
+}
+
+/* Projects */
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.projects-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.projects-text {
+  color: white;
+}
+
+.projects-icon {
+  color: white;
+}
