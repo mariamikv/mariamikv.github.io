@@ -64,11 +64,11 @@
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: 0.75rem;
+            left: 0.9rem;
             top: 0;
             bottom: 0;
             width: 2px;
-            background-color: #e5e7eb;
+            background-color: #ffffff;
         }
 
         .timeline-item:last-child::before {
@@ -94,7 +94,7 @@
         }
 
         .timeline-item:first-child::before {
-             height: calc(100% - 0.75rem);
+             height: calc(100% - 0.9rem);
              top: 0.75rem;
         }
 
@@ -181,9 +181,23 @@
             flex-direction: column;
             gap: 0.5rem;
         }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
+    <a href="/index.html" class="back-button">Back</a>
     <div class="container">
         <h1 class="section-title">Experience</h1>
 
@@ -203,7 +217,7 @@
         </div>
 
         <div class="accordion-section">
-            <details class="accordion-item">
+            <details class="accordion-item" open>
                 <summary class="accordion-summary">
                     <span>TNET</span>
                     <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
